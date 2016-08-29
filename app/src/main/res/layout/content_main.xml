@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    android:background="#FFCCCCCC"
+    android:orientation="vertical"
+
+    tools:context="com.example.paintproject.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <!--this is adding an instance of a custom view - the class
+       this sets general layout properties, white for the background and an id to reference the view-->
+    <com.example.paintproject.DrawView
+        android:id="@+id/drawing"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF" />
+
+    <!--this is creating the canvas with buttons -->
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/draw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/brush"
+            android:src="@drawable/brush" />
+
+        <ImageButton
+            android:id="@+id/undo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="Undo"
+            android:src="@drawable/undo"
+            android:onClick="onClickUndo"/>
+
+        <ImageButton
+            android:id="@+id/redo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="Redo"
+            android:src="@drawable/redo"
+            android:onClick="onClickRedo"/>
+
+        <ImageButton
+            android:id="@+id/color_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/color"
+            android:src="@drawable/color" />
+
+        <ImageButton
+            android:id="@+id/new_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/start_new"
+            android:src="@drawable/new_pic"
+            android:onClick="ClearScreen"/>
+
+        <ImageButton
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:src="@drawable/save"
+            android:onClick="saveImage"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

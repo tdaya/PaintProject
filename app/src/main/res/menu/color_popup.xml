@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/black"
+        android:title="black"
+        android:icon="@drawable/black"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/yellow"
+        android:title="yellow"
+        android:icon="@drawable/yellow"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/purple"
+        android:title="purple"
+        android:icon="@drawable/purple"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/orange"
+        android:title="orange"
+        android:icon="@drawable/orange"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/red"
+        android:title="red"
+        android:icon="@drawable/red"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/green"
+        android:title="green"
+        android:icon="@drawable/green"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/blue"
+        android:title="blue"
+        android:icon="@drawable/blue"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/white"
+        android:title="white"
+        android:icon="@drawable/white"
+        app:showAsAction="never"/>
+
+</menu>

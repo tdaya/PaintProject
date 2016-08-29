@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_delete" type="id">action</item>
+    <item name="action_redo" type="id" />
+    <item name="action_undo" type="id" />
+</resources>

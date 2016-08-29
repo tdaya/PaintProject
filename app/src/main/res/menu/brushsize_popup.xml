@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/twenty"
+        android:title="twenty"
+        android:icon="@drawable/twenty"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/fourty"
+        android:title="fourty"
+        android:icon="@drawable/fourty"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/sixty"
+        android:title="sixty"
+        android:icon="@drawable/sixty"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/eighty"
+        android:title="eighty"
+        android:icon="@drawable/eighty"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/hundred"
+        android:title="hundred"
+        android:icon="@drawable/hundred"
+        app:showAsAction="ifRoom"/>
+</menu>
